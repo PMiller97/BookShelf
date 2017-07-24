@@ -10,6 +10,8 @@ namespace BookShelf.Models
     {
         [Key]
         public int ID { get; set; }
+
+        [Display(Name="Category")]
         public string Name { get; set; }
         public virtual ICollection<book> Books { get; set; } //ICollection is also a navigation property-is what, along with keys, allows me to connect my classes to eachother
 
